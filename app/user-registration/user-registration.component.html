@@ -1,0 +1,32 @@
+<br />
+<br />
+<br />
+<br />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+  <h2>{{ name }} Profile</h2>
+  <div class="panel panel-default">
+    <h2 style="text-align:center">User Profile Card</h2>
+
+    <div class="card">
+      <img [src]="url" height="200" alt="John" style="width:100%">
+      <h1>{{firstName}} {{lastName}}</h1>
+      <p class="title">{{emailId}} & {{mobileNo}}, {{age}}</p>
+      <p>{{country}} {{state}} {{city}}</p>
+      <p>{{address}}</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+      <button (click)=onduty()>View Profile</button>
+      <button (click)=offduty()>Close</button>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+</div>

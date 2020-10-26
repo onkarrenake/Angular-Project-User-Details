@@ -1,0 +1,161 @@
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://www.w3schools.com/w3images/workbench.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://www.w3schools.com/getcertified.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Bread Basket</h4>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+   
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <div class="col-sm-6 form-group">
+        <img [src]="url" alt="Avatar" class="avatar"> <br/>
+        <input type='file' (change)="onSelectFile($event)">
+      </div>
+    </div>
+
+    <div >
+      <div class="col-sm-6 form-group">
+        <label for="firstName"><b>First Name</b></label>
+        <input class="form-control" type="text" placeholder="Enter First Name" [(ngModel)]="firstName" name="firstName" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="lastName"><b>Last Name</b></label>
+        <input class="form-control" type="text" placeholder="Enter Last Name" [(ngModel)]="lastName" name="lastName" required>
+      </div>
+      
+      <div class="col-sm-10 form-group">
+        <label for="emailId"><b>Email Id</b></label>
+        <input class="form-control" type="text" placeholder="Enter First Name" [(ngModel)]="emailId" name="emailId" required>
+      </div>
+
+      <div class="col-sm-10 form-group">
+        <label for="mobileNo"><b>Mobile Number</b></label>
+        <input class="form-control" type="text" placeholder="Enter Mobile Number" [(ngModel)]="mobileNo" name="mobileNo" required>
+      </div>
+
+      <div class="col-sm-10 form-group">
+        <div>
+          <input type="range" min="1" max="100" value="20" class="slider" [(ngModel)]="age" id="myRange">
+          <p>Age: <span id="demo"></span></p>
+        </div>
+      </div>
+
+      <div class="col-sm-10 form-group">
+        <label for="country" class="btn btn-default">Country</label> :-
+          <select id="country" [(ngModel)]="country" name="country" class="btn btn-default">
+          <option value="">Select</option>
+          <option value="India">India</option>
+          <option value="America">America__us_</option>
+          <option value="Japan">Japan</option>
+          <option value="Africa">Africa</option>
+        </select>
+      </div>
+      <div class="col-sm-10 form-group">
+        <label for="state" class="btn btn-default">States_</label> :-
+        <select id="state" [(ngModel)]="state" name="state" class="btn btn-default" >
+          <option value="">Select</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Karnatak">Karnatak</option>
+          <option value="Tamil_Nadu">Tamil___Nadu</option>
+          <option value="Channai">Channai</option>
+        </select>
+      </div>
+      <div class="col-sm-10 form-group">
+        <label for="city" class="btn btn-default">Cities__</label> :-
+        <select id="citycity" [(ngModel)]="city" name="city" class="btn btn-default">
+          <option value="">Select</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Kolhapur">Kolhapur_ICH</option>
+          <option value="Dadar">Dadar</option>
+        </select>
+      </div>
+      <div class="col-sm-10 form-group">
+        <label for="address"><b>Address</b></label>
+        <input class="form-control" type="text" [(ngModel)]="address" placeholder="Enter Address" name="address" required>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" required> All Information Are True ?
+        </label>
+      </div>
+      <div class="col-sm-10 form-group">
+        <button (click)=handleUserData() class="btn btn-primary">login</button>
+      </div>
+      <div style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  </script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+/*---------------------------------*/
+</script>
+
+
+  
